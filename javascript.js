@@ -52,6 +52,8 @@ function playround(computerplay, playerselection){
 }
 
 function playgame(){
+    let pscore = 0
+    let cscore = 0
     for (let i = 0; i<5; i++){
         let comp = computerplay()
         let player = playerselection()
