@@ -19,47 +19,87 @@ function playerselection(){
 // function that plays a round and tells the user what 
 function playround(computerplay, playerselection){
     if (computerplay == playerselection){
-        console.log("You both chose " + computerplay + ". You tie!")
+        const div = document.createElement('div')
+        div.textContent = `You both chose ${computerplay}. you tie!`
+        container.appendChild(div)
+
     }
 
     else if (computerplay != playerselection){
         if (playerselection === "rock" && computerplay === "scissors"){
-            console.log("The computer chose " +  computerplay + ". You win!")
+            const div = document.createElement('div')
+            div.textContent = `The computer chose ${computerplay}. you win!`
+            container.appendChild(div)
         }
 
         if (playerselection === "rock" && computerplay === "paper"){
-            console.log("The computer chose " +  computerplay + ". You lost!")
+            const div = document.createElement('div')
+            div.textContent = `The computer chose ${computerplay}. you lost!`
+            container.appendChild(div)
         }
 
         if (playerselection === "scissors" && computerplay === "rock"){
-            console.log("The computer chose " +  computerplay + ". You lost!")
+            const div = document.createElement('div')
+            div.textContent = `The computer chose ${computerplay}. you lost!`
+            container.appendChild(div)
         }
 
         if (playerselection === "scissors" && computerplay === "paper"){
-            console.log("The computer chose " +  computerplay + ". You win!")
+            const div = document.createElement('div')
+            div.textContent = `The computer chose ${computerplay}. you win!`
+            container.appendChild(div)
         }
         
         if (playerselection === "paper" && computerplay === "scissors"){
-            console.log("The computer chose " +  computerplay + ". You lost!")
+            const div = document.createElement('div')
+            div.textContent = `The computer chose ${computerplay}. you lost!`
+            container.appendChild(div)
         }
 
         if (playerselection === "paper" && computerplay === "rock"){
-            console.log("The computer chose " +  computerplay + ". You lost!")
+            const div = document.createElement('div')
+            div.textContent = `The computer chose ${computerplay}. you lost!`
+            container.appendChild(div)
+        }
+            
+
         }
         
     }
 
-}
 
-function playgame(){
-    let pscore = 0
-    let cscore = 0
-    for (let i = 0; i<5; i++){
-        let comp = computerplay()
-        let player = playerselection()
-        console.log(playround(comp,player))
-    }
-}
 
-playgame()
+
+let comp = computerplay()
+const container = document.querySelector('.container')
+//let player = playerselection()
+
+//playround(comp,player)
+
+
+//here is the js for the gui, first I am trying to play RPS with the buttons that I have created
+
+//assigning variables to RPS
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
+
+//telling the JS what the player selected so the game can run, at this point at would only display the results in the console
+rock.addEventListener('click', () => {
+    player = "rock";
+    playround(comp,player);
+
+});
+
+paper.addEventListener('click', () => {
+    player = "paper";
+    playround(comp,player);
+
+});
+
+scissors.addEventListener('click', () => {
+    player = "scissors";
+    playround(comp,player);
+
+});
 
