@@ -1,0 +1,12 @@
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(discord.ttf);
+}
+
+body{
+    background-color: #282b30;
+    color: white;
+    font-family: myFirstFont;
+}

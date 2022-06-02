@@ -81,7 +81,32 @@ function playround(playerselection){
         playscore.innerHTML = playerscore;
         compscore.innerHTML = computerscore;
 
+        if (playerscore === 5 || computerscore === 5){
+            let eggstop = document.getElementById('egg')
+            let gcstop = document.getElementById('gc')
+            let ragestop = document.getElementById('rage')
 
+            eggstop.disabled = true;
+            gcstop.disabled = true;
+            ragestop.disabled = true;
+            if (playerscore == 5){
+                let ender = document.createElement('p');
+                ender.textContent = 'You beat the computer! :)';
+                result.appendChild(ender);
+
+            }
+            else if (computerscore == 5){
+                let ender = document.createElement('p');
+                ender.textContent = 'The computer wins :(';
+                result.appendChild(ender);
+
+                
+            }
+            
+
+                                     
+
+        }
 
 
         //creating an element for the computer score and adding the score from the playround function
