@@ -29,16 +29,16 @@ function playround(playerselection){
             //const div = document.createElement('div')
             //div.textContent = `The computer chose ${computerplay}. you win!`
             //container.appendChild(div)
-            result.innerHTML = `The computer chose ${computerplay}. you win!`
-            ++playerscore 
+            result.innerHTML = `The computer chose ${computerplay}. you lose!`
+            ++computerscore 
         }
 
         if (playerselection === "egg" && computerplay === "gc"){
             //const div = document.createElement('div')
             //div.textContent = `The computer chose ${computerplay}. you lost!`
             //container.appendChild(div)
-            result.innerHTML = `The computer chose ${computerplay}. you lost!`
-            ++computerscore 
+            result.innerHTML = `The computer chose ${computerplay}. you win!`
+            ++playerscore
 
         }
 
@@ -46,24 +46,24 @@ function playround(playerselection){
             //const div = document.createElement('div')
             //div.textContent = `The computer chose ${computerplay}. you lost!`
             //container.appendChild(div)
-            result.innerHTML = `The computer chose ${computerplay}. you lost!`
-            ++computerscore 
+            result.innerHTML = `The computer chose ${computerplay}. you win!`
+            ++playerscore
         }
 
         if (playerselection === "rage" && computerplay === "gc"){
             //const div = document.createElement('div')
             //div.textContent = `The computer chose ${computerplay}. you win!`
             //container.appendChild(div)
-            result.innerHTML = `The computer chose ${computerplay}. you win!`
-            ++playerscore
+            result.innerHTML = `The computer chose ${computerplay}. you lose!`
+            ++computerscore
         }
         
         if (playerselection === "gc" && computerplay === "rage"){
             //const div = document.createElement('div')
             //div.textContent = `The computer chose ${computerplay}. you lost!`
             //container.appendChild(div)
-            result.innerHTML = `The computer chose ${computerplay}. you lost!`
-            ++computerscore
+            result.innerHTML = `The computer chose ${computerplay}. you win!`
+            ++playerscore
         }
 
         if (playerselection === "gc" && computerplay === "egg"){

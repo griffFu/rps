@@ -6,7 +6,84 @@
 }
 
 body{
-    background-color: #282b30;
+    background-color:#1e2124;
     color: white;
     font-family: myFirstFont;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    background-color: #7289da;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+
+#buttons{
+    
+    
+    
+}
+
+#egg{
+    flex: display;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    
+    
+    
+    
+}
+
+#gc{
+    margin-right: 20px;
+    flex: display;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+   
+    
+    
+}
+
+#rage{
+   
+    flex: display;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+img{
+    height: 196px;
+    width: 128px;
+    border-radius: 25px;
+    
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 140px;
+    
+    
+}
+
+.playerscore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
